@@ -1,0 +1,25 @@
+{% load static  %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css ' %}">
+</head>
+<body>
+    {% block pagename %}
+
+    {% endblock %}
+
+    {% block menu %}
+        <a href="http://127.0.0.1:8000/platform/"> <h3>Главная</h3></a>
+        <a href="http://127.0.0.1:8000/platform/games/"><h3>Магазин</h3></a>
+        <a href="http://127.0.0.1:8000/platform/cart/"><h3>Корзина</h3></a>
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
